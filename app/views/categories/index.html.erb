@@ -1,0 +1,19 @@
+<!--<div class="logo">
+  <%= image_tag("logo_test.png", class: "logo")%>
+</div>-->
+
+<div class="container">
+  <% @categories.each do |category| %>
+
+    <div class="card-categorie">
+      <div class="card-image">
+        <%= link_to categories_path(category) do %>
+        <% end %>
+      </div>
+      <div class="category-name">
+        <li><h3><%=category.label%></h3></li>
+      </div>
+    </div>
+
+  <% end %>
+</div>
