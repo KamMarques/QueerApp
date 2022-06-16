@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Item.destroy_all
-Category.destroy_all
+Category.delete_all
 User.destroy_all
 
 user1 = User.create!(nickname: "Kam", email: "test@test.com", password: "123456")
@@ -41,4 +41,4 @@ category26 = Category.create!(label: "Cours", category: category4)
 category27 = Category.create!(label: "Associations", category: category4)
 category28 = Category.create!(label: "Plombiers", category: category5)
 
-# item1 = Item.create!(name: "Concert Bikini Kill", description: "Bikini Kill est un groupe de punk rock américain originaire d'Olympia, État de Washington. Formé en octobre 1990, le groupe est considéré comme précurseur du mouvement riot grrrl", address: "Trabendo, Paris", price: "30€", date_start: "08/06/2022")
+#item1 = Item.create!(name: "Concert Bikini Kill", description: "Bikini Kill est un groupe de punk rock américain originaire d'Olympia, État de Washington. Formé en octobre 1990, le groupe est considéré comme précurseur du mouvement riot grrrl", address: "Trabendo, Paris", price: "30€", date_start: "08/06/2022")
