@@ -1,19 +1,21 @@
-<h1 class="text-center mt-3">Ajouter du contenu</h1>
-<div class="row">
-  <div class="col-12">
-    <div class="form">
-      <%= simple_form_for (@item) do |f|%>
-      <%= f.input :category, label: "Categorie"%>
-      <%= f.input :category, label: "Sous-categorie"%>
-      <%= f.input :name, label: "titre"%>
-      <%= f.input :description%>
-      <%= f.input :address, label: "Adresse"%>
-      <%= f.input :date_start, label: "Date début"%>
-      <%= f.input :date_end, label: "Date fin"%>
-      <%= f.input :price, label: "Prix"%>
-      <%= f.input :photo, as: :file %>
-      <%= f.submit "Envoyer", class: "button-submit"%>
-      <%end%>
+<div class="container">
+  <h1 class="text-center mt-3">Ajouter du contenu</h1>
+  <div class="row">
+    <div class="col-12">
+      <div class="form">
+        <%= simple_form_for (@item) do |f|%>
+        <%= f.input :category, label: "Categorie"%>
+        <%= f.input :category, label: "Sous-categorie"%>
+        <%= f.input :name, label: "titre"%>
+        <%= f.input :description%>
+        <%= f.input :address, label: "Adresse"%>
+        <%= f.input :date_start, label: "Date début"%>
+        <%= f.input :date_end, label: "Date fin"%>
+        <%= f.input :price, label: "Prix"%>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit "Envoyer", class: "button-submit"%>
+        <%end%>
+      </div>
     </div>
   </div>
 </div>
