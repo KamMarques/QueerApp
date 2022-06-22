@@ -1,2 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container-home">
+  <div class="logo-homepage">
+    <%= image_tag("logo_test.png", class: "logo-home")%>
+  </div>
+  <br>
+  <div class="content">
+    <div class="text">
+      <p>L'app pour trouver ce que tu cherches et informer celleux qui cherchent!!</p>
+    </div>
+    <div class="link">
+      <a class="button-ajout" href="/items/new">Ajouter du contenu</a>
+      <p><%= link_to "ENTRER", categories_path, class:"btn btn-warning " %></p>
+    </div>
+  </div>
+</div>
