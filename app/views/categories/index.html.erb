@@ -11,7 +11,9 @@
         <% end %>
       </div>
       <div class="category-name">
-        <li><h3><%=category.label%></h3></li>
+        <%if foreign_key = nil %>
+          <li><h3><%=category.label %></h3></li>
+        <% end %>
       </div>
     </div>
 
