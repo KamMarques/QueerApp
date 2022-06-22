@@ -39,16 +39,6 @@ ActiveRecord::Schema.define(version: 2022_06_01_134020) do
     t.index ["user_id"], name: "index_items_on_user_id"
   end
 
-  create_table "reviews", force: :cascade do |t|
-    t.text "comment"
-    t.bigint "user_id", null: false
-    t.bigint "item_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["item_id"], name: "index_reviews_on_item_id"
-    t.index ["user_id"], name: "index_reviews_on_user_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -65,6 +55,4 @@ ActiveRecord::Schema.define(version: 2022_06_01_134020) do
   add_foreign_key "categories", "categories"
   add_foreign_key "items", "categories"
   add_foreign_key "items", "users"
-  add_foreign_key "reviews", "items"
-  add_foreign_key "reviews", "users"
 end

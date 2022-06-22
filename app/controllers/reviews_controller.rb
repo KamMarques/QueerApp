@@ -34,5 +34,3 @@ class ReviewsController < ApplicationController
     params.require(:reviews).permit(:comment)
   end
 end
-
-end
